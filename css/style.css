@@ -1,0 +1,433 @@
+body {
+    margin: 0;
+}
+
+/* TOP MENU */
+
+.topMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #FFEACA;
+    height: 100%;
+    max-height: 300px;
+    align-items: center;
+}
+
+.topMenu h3 {    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.topMenuLeft {
+    display: flex;    
+    justify-content: center;
+    align-items: center;        
+}
+.topMenuLeft img {
+    height: 60px;
+    padding-right: 10px;   
+}
+.topMenuLeft h3 {
+border-left: 1px solid black;
+}
+
+.topMenuRight h3:not(.login) {
+    border-right: 1px solid black; }
+
+.login{
+   background-color:#5B7C6E ;
+}
+
+.topMenuCenter {
+    width: auto;
+}
+
+.topMenuRight {
+    display: flex;
+}
+
+
+/* FONTS */
+
+.title {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.thin {
+    
+    font-weight:200;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+}
+
+.whiteThin {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    /* margin: 0px; */
+
+}
+
+.sharp {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    
+}
+
+.paragraph {
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.whiteSharp {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    /* margin: 0px; */
+}
+
+.whiteParagraph {
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;    
+    color: white;
+}
+
+.prenumenera {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0px;
+    border: 2px solid white;
+    padding: 10px;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+
+/* INGRESS */
+
+.ingress {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+padding: 30px;
+}
+
+
+
+.ingress p {
+    text-align: center;
+}
+
+
+/* MAIN */
+
+main {    
+    background-color: #C9DEE1;      
+    display: flex;
+    justify-content: center;
+      
+}
+
+
+/* LANDING PAGE MAIN */
+.cardContent {
+    display: flex;
+    flex-direction: row;
+    flex-basis: content;
+    justify-content: center;    
+}
+
+main .smallCards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   justify-content: space-between;
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+
+.bigCard {
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bigCard article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;    
+}
+
+
+.bigCard img{
+    width: 600px; 
+  height: 400px;        
+}
+
+.smallCard {
+    position: relative;
+}
+
+.smallCard article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    opacity: 80%;
+}
+
+.smallCard img{
+   width: 300px;   
+   height: 240px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #434343;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.footerList {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;    
+}
+
+
+
+/* ABOUT US MAIN */
+
+
+.cardWrapper {
+    gap: 2vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    margin: 3%;
+}
+
+.aboutCard {
+    position: relative;
+}
+
+.aboutCard img{
+    width: 600px;
+}
+.aboutCard article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    opacity: 80%;
+}
+
+
+/* BOOKING MAIN */
+
+html {
+    scroll-behavior: smooth;
+}
+.bookingMain {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bookingImg{
+    width: 100%;
+}
+
+.bookingInfo {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 80%;  
+    
+    
+}
+
+.bookingInfo article {
+    padding: 1vw;
+    min-width: 400px;
+}
+
+.listInfo {
+    border: 1px solid black;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    min-width: fit-content;
+    
+}
+
+
+li {
+    margin: 5px;
+}
+
+.infoBtn {
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    cursor: pointer;
+    
+}
+
+.infoBtn .thin {
+    margin-top: 20px;
+}
+
+.infoBtn a {
+    width: 60%;
+    
+}
+
+.infoBtn .whiteThin {
+    background-color: #5B7C6E;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    margin: 40px;
+    
+    
+}
+
+.formSection h2 {
+    padding: 20px;
+}
+
+.bookingForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    column-gap: 3vw;
+    row-gap: 10px;
+    padding: 10px;
+    
+    
+}
+
+.bookingForm div {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.bookingForm div > * {
+    /* flex: 1; */
+    padding: 10px;
+    
+}
+
+input {
+    background-color: #F0FDFF;
+    border: 0;
+}
+
+.bookingForm section {
+    width: 70%;
+}
+
+.captcha {
+    display: flex;
+    flex-direction: row;
+    background-color: #EBEBEB;
+    justify-content:space-around;
+    align-items: center;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    justify-self: right;
+    
+    
+    
+    
+    
+}
+
+.captcha input {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    
+    
+}
+
+.captcha img {
+    width: 3vw;
+    
+}
+
+
+
+.bookBtn {
+    
+    margin-top: 30px;
+    /* display: flex;
+    margin-top: 30px;
+    flex-direction: column; */
+    /* justify-content: center; */
+    cursor: pointer;
+    
+}
+
+.bookBtn .whiteThin {
+    background-color: #5B7C6E;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    min-width: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
